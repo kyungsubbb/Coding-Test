@@ -1,13 +1,15 @@
-n = int(input())
-ans = list()
+import sys
+from collections import deque
+
+n = int(sys.stdin.readline())
+ans = deque([])
 for i in range(n):
-    arr = list()
-    arr = input().split()
+    arr = sys.stdin.readline().split()
     if arr[0] == "push" :
         ans.append(int(arr[1]))
     elif arr[0] == "pop" :
         if len(ans) >= 1:
-            print(ans.pop(0))
+            print(ans.popleft())
         else :
             print(-1)
     elif arr[0] == "size" :
@@ -29,3 +31,4 @@ for i in range(n):
         else :
             print(-1)
 
+# deque를 쓰고 안쓰고가 시간차이가 납니다..
