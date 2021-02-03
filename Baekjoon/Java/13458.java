@@ -12,7 +12,7 @@ public class Main {
 		int B = sc.nextInt();
 		int C = sc.nextInt();
 		
-		long cnt = 0;
+		long cnt = 0;								// int type에서 오답
 		
 		for (int i = 0; i < A.length; i++) {
 			A[i] -= B;
