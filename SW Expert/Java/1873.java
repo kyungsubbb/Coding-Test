@@ -31,8 +31,6 @@ class SWEX_1873 {
 			}
 
 			for (int i = 0; i < skill.length; i++) {
-
-				// System.out.println(tank_x + " "+ tank_y);
 				if (skill[i] == 'S') {
 					int nx = tank_x;
 					int ny = tank_y;
@@ -132,7 +130,6 @@ class SWEX_1873 {
 				}
 				System.out.println();
 			}
-			// System.out.println();
 		}
 		sc.close();
 	}
