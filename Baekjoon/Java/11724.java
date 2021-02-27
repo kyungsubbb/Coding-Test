@@ -20,10 +20,10 @@ public class Main {
 			st = new StringTokenizer(in.readLine(), " ");
 			int tmp1 = Integer.parseInt(st.nextToken());
 			int tmp2 = Integer.parseInt(st.nextToken());
-			map[tmp1][tmp2] = true;
+			map[tmp1][tmp2] = true;							// 연결 표시
 			map[tmp2][tmp1] = true;
 		}
-		Stack<Integer> stack = new Stack<Integer>();
+		Stack<Integer> stack = new Stack<Integer>();		//dfs를 위한 스택 생성
 		for (int i = 1; i < map.length; i++) {
 			for (int j = 1; j < map[i].length; j++) {
 				boolean check = false;
